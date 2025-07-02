@@ -149,14 +149,14 @@
 
   .btn-luxury {
     @apply bg-primary text-primary-foreground px-8 py-3 rounded-md font-medium
-           transition-all duration-400 hover:shadow-[var(--shadow-glow)]
+           transition-all duration-300 hover:shadow-[var(--shadow-glow)]
            hover:scale-105 active:scale-95;
     background: var(--gradient-primary);
   }
 
   .btn-outline-luxury {
     @apply border-2 border-primary text-primary px-8 py-3 rounded-md font-medium
-           transition-all duration-400 hover:bg-primary hover:text-primary-foreground
+           transition-all duration-300 hover:bg-primary hover:text-primary-foreground
            hover:shadow-[var(--shadow-luxury)] hover:scale-105 active:scale-95;
   }
 

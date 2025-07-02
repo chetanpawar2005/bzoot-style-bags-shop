@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-bag.jpg';
 
@@ -27,19 +28,23 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="btn-luxury text-lg px-8 py-4 min-w-[200px]"
-            >
-              Shop Collection
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="btn-outline-luxury text-lg px-8 py-4 min-w-[200px] bg-primary-foreground/10 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              Learn More
-            </Button>
+            <Link to="/collections">
+              <Button 
+                size="lg" 
+                className="btn-luxury text-lg px-8 py-4 min-w-[200px]"
+              >
+                Shop Collection
+              </Button>
+            </Link>
+            <a href="#about">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="btn-outline-luxury text-lg px-8 py-4 min-w-[200px] bg-primary-foreground/10 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              >
+                Learn More
+              </Button>
+            </a>
           </div>
         </div>
 

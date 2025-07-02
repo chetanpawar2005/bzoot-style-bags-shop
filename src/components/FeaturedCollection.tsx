@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import bagCollection from '@/assets/bag-collection.jpg';
@@ -98,9 +99,11 @@ const FeaturedCollection = () => {
 
         {/* View All Button */}
         <div className="text-center">
-          <Button size="lg" variant="outline" className="btn-outline-luxury">
-            View All Collections
-          </Button>
+          <Link to="/collections">
+            <Button size="lg" variant="outline" className="btn-outline-luxury">
+              View All Collections
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
